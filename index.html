@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GST Tax Calculation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div class="overlay"></div>
+  <div class="wrapper">
+    <h2>GST Tax Calculation</h2>
+    <form>
+      <input type="number" id="inputVal" placeholder="Total Amount"><br>
+      <input type="button" value="Calculate" onclick="showTax()" class="btnout outsuccess">
+      <input type="reset" onclick="resetAll()" value="Clear" class="btnout outwarning">
+    </form>
+    <div class="clear"></div>
+    <ul>
+      <li>Net value is: <strong id="netVal">0</strong></li>
+      <li>GST value is: <strong id="gstVal">0</strong></li>
+    </ul>
+  </div>
+</body>
+</html>
